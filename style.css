@@ -1,0 +1,86 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    /* box sizing somroul dl ka kat space of padding */
+    margin: 0px;
+    padding: 0px;
+/* Pel leng padding and margin vea ng si space. pel use margin vea ng si width*/
+}
+.container {
+    width: 88%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    width: 32%;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.card-title {
+    padding: 10px;
+    font-weight: 1rem;
+}
+.card-body {
+    padding: 10px;
+}
+.bt {
+    border-top: 3px solid purple;
+}
+.btn {
+    margin-top: 10px;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.btn a {
+    padding: 10px 20px;
+    background: orange;
+    text-decoration: none;
+    color: #fff;
+    box-sizing: border-box;
+}
+@media (max-width:1110px) {
+    .btn {
+        flex-wrap: wrap;
+    }
+    .btn a {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+@media (max-width: 955px) {
+    .btn {
+        flex-wrap: wrap;
+    }
+    .btn a {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 900px) {
+    body {
+        background: yellow;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .card {
+        width: 49%;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        background: blue;
+    }
+    .card {
+        width: 100%;
+    }
+    .container {
+        width: 97%;
+    }
+}
